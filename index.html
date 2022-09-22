@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()">
+    <h1>Minesweeper</h1>
+    <table class="upper" border="1" cellpadding="10">
+        <tr>
+            <td class="level" colspan="3">Chose your Level!<br /><span></span></td>
+        </tr>
+        <tr>
+            <td class="time">Game Time:<br><span></span></td>
+            <td class="gameover"><button onclick="restart()"">New<br />Game!</button></td>
+            <td class="flags-left">Flags left:<br><span></span></td>
+        </tr>
+    </table>
+    <div class="game">
+        <table>
+            <tbody class="board">
+
+            </tbody>
+        </table>
+    </div>
+    <h3>Game by Mauricio Einhorn</h3>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

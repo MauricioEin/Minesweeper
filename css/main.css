@@ -1,0 +1,111 @@
+body {
+    text-align: center;
+    background-image: url(../img/tiles2.jpg);
+    background-attachment: fixed;
+}
+
+h1, h3{
+    /* color: */
+
+    margin: auto;
+    border: 1px solid black;
+    padding: 0px 10px 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px 7px  rgba(46, 63, 79, 0.82);
+    width: fit-content;
+    font-size: 3em;
+    color: #ffd53d;
+    background-color: rgb(240, 240, 240);
+    text-shadow: 2px 0 0px #2b0080, 3px 2px 0px rgba(77, 0, 38, 0.5), 3px 0 3px #4800ff, 5px 0 3px #007780, 6px 2px 3px rgba(18, 0, 77, 0.5), 6px 0 9px #00e1ff,0px 0 9px #00807a, 9px 2px 9px rgba(15, 0, 77, 0.5), 9px 0 10px #FFD500, 7px 0 10px #a29d02, -3px 2px 6px rgba(77, 66, 0, 0.5);
+}
+
+h3{
+    font-size: 1.2em;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    padding: 0px 6px;
+    width: fit-content;
+}
+
+table {
+    background-color: rgb(211, 250, 250);
+    margin: 30px auto;
+    border: solid black 1px;
+    box-shadow: 3px 3px 6px 7px rgba(46, 63, 79, 0.82);
+
+}
+
+.upper td {
+    background-color: rgb(240, 240, 240);
+    padding: 4px 10px 0px;
+    border-radius: 5px;
+
+}
+
+.board td {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(240, 240, 240);
+    border: 3px rgb(229, 229, 229) outset;
+}
+
+.board td:hover {
+    background-color: rgb(200,200,200);
+}
+
+
+.shown {
+    /* I dont know why this isn't working! */
+    background-color: rgb(206, 102, 102);
+}
+
+.flag {
+    background-image: url(../img/flag.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(0, 0, 0, 0);
+}
+
+button {
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 3px;
+    background-color: rgb(220, 222, 222) ;
+}
+
+
+.chosen {
+    background-color: rgb(184, 220, 225);
+    font-weight: bold;
+    cursor: default;
+
+}
+
+.unchosen {
+    transition: 300ms;
+
+}
+
+.unchosen:hover {
+    background-color: rgb(235, 232, 202);
+
+}
+
+img {
+    height: 20px;
+    width: 20px;
+
+}
+
+.gameover button {
+    font-size: xx-large;
+    padding-bottom: 2px;
+    border-radius: 6px;
+}
+
+.gameover button:hover {
+    background-color: rgb(200,200,200);
+}
