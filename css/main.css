@@ -2,24 +2,26 @@ body {
     text-align: center;
     background-image: url(../img/tiles2.jpg);
     background-attachment: fixed;
+    padding-bottom: 20px;
 }
 
-h1, h3{
+h1,
+h3 {
     /* color: */
 
     margin: auto;
     border: 1px solid black;
     padding: 0px 10px 10px;
     border-radius: 15px;
-    box-shadow: 3px 3px 6px 7px  rgba(46, 63, 79, 0.82);
+    box-shadow: 3px 3px 6px 7px rgba(46, 63, 79, 0.82);
     width: fit-content;
     font-size: 3em;
     color: #ffd53d;
     background-color: rgb(240, 240, 240);
-    text-shadow: 2px 0 0px #2b0080, 3px 2px 0px rgba(77, 0, 38, 0.5), 3px 0 3px #4800ff, 5px 0 3px #007780, 6px 2px 3px rgba(18, 0, 77, 0.5), 6px 0 9px #00e1ff,0px 0 9px #00807a, 9px 2px 9px rgba(15, 0, 77, 0.5), 9px 0 10px #FFD500, 7px 0 10px #a29d02, -3px 2px 6px rgba(77, 66, 0, 0.5);
+    text-shadow: 2px 0 0px #2b0080, 3px 2px 0px rgba(77, 0, 38, 0.5), 3px 0 3px #4800ff, 5px 0 3px #007780, 6px 2px 3px rgba(18, 0, 77, 0.5), 6px 0 9px #00e1ff, 0px 0 9px #00807a, 9px 2px 9px rgba(15, 0, 77, 0.5), 9px 0 10px #FFD500, 7px 0 10px #a29d02, -3px 2px 6px rgba(77, 66, 0, 0.5);
 }
 
-h3{
+h3 {
     font-size: 1.2em;
     color: black;
     text-shadow: 2px 2px 4px white;
@@ -29,13 +31,14 @@ h3{
 
 table {
     background-color: rgb(211, 250, 250);
-    margin: 30px auto;
+    margin: 30px auto 15px;
     border: solid black 1px;
     box-shadow: 3px 3px 6px 7px rgba(46, 63, 79, 0.82);
 
 }
 
 .upper td {
+    border: solid 1px black;
     background-color: rgb(240, 240, 240);
     padding: 4px 10px 0px;
     border-radius: 5px;
@@ -47,18 +50,20 @@ table {
     width: 25px;
     cursor: pointer;
     font-weight: bold;
-    background-color: rgb(240, 240, 240);
-    border: 3px rgb(229, 229, 229) outset;
+    background-color: rgb(220, 220, 220);
+    border: 3px rgb(240, 240, 240) outset;
 }
 
 .board td:hover {
-    background-color: rgb(200,200,200);
+    background-color: rgb(180, 180, 180) !important;
 }
 
 
 .shown {
+    background-image: linear-gradient(rgb(210, 210, 210), rgb(210, 210, 210));
     /* I dont know why this isn't working! */
-    background-color: rgb(206, 102, 102);
+    /* background-color: rgb(206, 102, 102); */
+    border-style: inset;
 }
 
 .flag {
@@ -73,7 +78,7 @@ button {
     cursor: pointer;
     margin: 10px;
     border-radius: 3px;
-    background-color: rgb(220, 222, 222) ;
+    background-color: rgb(220, 222, 222);
 }
 
 
@@ -107,5 +112,125 @@ img {
 }
 
 .gameover button:hover {
-    background-color: rgb(200,200,200);
+    background-color: rgb(200, 200, 200);
 }
+
+.miners {
+    margin-top: 0px;
+    background-color: aliceblue;
+    border-radius: 20%;
+}
+
+.miners:hover {
+    background-color: rgb(211, 250, 250);
+}
+
+
+.miners img {
+    width: 50px;
+    height: auto;
+}
+
+
+.features {
+    font-weight: bold;
+    background-color: #1a004d;
+    border: #023034 2px solid;
+    padding: 10px;
+    height: max-content;
+    width: min-content;
+    max-height: 90%;
+    position: fixed;
+    bottom: 5%;
+    overflow: auto;
+    box-shadow: 4px 4px 4px 7px rgba(0, 0, 0, 0.72);
+}
+
+
+.feature {
+    background-color: rgba(255, 187, 0, 1);
+    border: solid 2px rgb(253, 233, 159);
+    box-shadow: 2px 2px 5px 2px rgba(240, 185, 185, 0.32);
+    height: fit-content;
+    width: fit-content;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: small;
+    display: inline-block;
+}
+
+.feature button {
+    width: fit-content;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.72);
+
+}
+.feature :hover{
+    color:#a6588f;
+}
+.close {
+    color: aliceblue;
+    background-color: #3e2f5b;
+    height: 30px;
+    width: 30px;
+    border: 1px solid aliceblue;
+    border-radius: 6px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.close :hover {
+    background-color: #a6588f;
+    /* why not working? */
+}
+
+.hints{
+font-size: large;
+}
+.hints span {
+    cursor: pointer;
+}
+
+.features img {
+    margin: 5px auto 0;
+    height: 40px;
+    width: auto;
+}
+
+.seven,
+.undo {
+    cursor: pointer;
+}
+
+.empty {
+    color: grey;
+    cursor: default;
+}
+
+.safecell {
+    background-image: linear-gradient(azure, rgb(236, 121, 247));
+border-color: #FFD500;
+}
+
+.mega button {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.mega-range {
+    background-color: rgb(180, 180, 180) !important;
+}
+
+.manual span button{
+    margin:0px auto 0;
+    background-color: rgb(93, 252, 101);
+}
+
+/* .saved {
+    background-color: orange;
+} */
